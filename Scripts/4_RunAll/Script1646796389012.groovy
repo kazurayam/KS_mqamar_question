@@ -5,18 +5,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 try {
 	WebUI.callTestCase(findTestCase("1_CreateUser"), [:])
-} catch (StepFailedException e) {
-	TL.onIncident("Failure in 1_CreateUser")	
+} finally {
+	TL.onIncident("has finished")	
 }
 
 try {
 	WebUI.callTestCase(findTestCase("2_UpdateUser"), [:])
-} catch (StepFailedException e) {
-	TL.onIncident("Failure in 2_UpdateUser")
+} finally {
+	TL.onIncident("has finished")
 }
 
 try {
 	WebUI.callTestCase(findTestCase("3_DeleteUser"), [:])
-} catch (StepFailedException e) {
-	TL.onIncident("Failure in 3_DeleteUser")
+} finally {
+	TL.onIncident("has finished")
 }
